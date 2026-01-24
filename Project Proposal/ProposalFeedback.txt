@@ -1,0 +1,37 @@
+
+CMSI 4072 Spring 2026
+Project Proposal Feedback
+Project: self-learning chess
+=========================
+Proposal Document [2 points]:
+   Verbal Description
+      You effectively explain that you will build a chess application with
+      an integrated AI opponent, using a neural network, a minimax algorithm
+      and self-play to generate a decision tree and training data.  You
+      provide a clear identification of the target user and you have a clear
+      use of technical language and understanding of that.  The document
+      could be improved by including details about the user interface or
+      the final product quality.
+
+   Justification:
+      You show strong tie to relevant coursework, and a solid explanation of
+      why the project is meaningful.  You give evidence of relevant technical
+      experience, and provide a realistic reflection on feasibility of the
+      project.  This section could be made stronger by providing a more
+      explicit link to software-engineering practices
+
+
+Proposal Presentation [Slides and video] [3 points]:
+   Slides:
+      VERY nice work on the slides.  The color scheme is nice and the
+      titel slide is cool!  Try to use less text in your bullets so that
+      the audience doesn't have to read and can focus more on what you are
+      saying.
+
+   Video:
+
+
+Summary:
+--------
+
+Nice job overall!  Keep up the good work.  Will update after video is posted.
