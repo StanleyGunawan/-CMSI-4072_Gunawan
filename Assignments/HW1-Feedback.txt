@@ -1,0 +1,62 @@
+
+
+HW 1 - Stephens Book Chapters 1, 2, 4, and 5
+CMSI 4072 Spring 2026
+
+Category        Weight     Earned
+===========    ========    ======
+Problem 1.1    [8 pts.]       8.0
+Problem 1.2    [8 pts.]       8.0
+Problem 2.4    [1 pts.]       1.0
+Problem 2.5    [1 pts.]       1.0
+Problem 4.2    [5 pts.]       5.0
+Problem 4.4    [5 pts.]       4.0
+Problem 4.6    [1 pts.]       1.0
+Problem 4.8    [2 pts.]       2.0
+Problem 5.1    [1 pts.]       1.0
+Problem 5.3    [5 pts.]       4.0
+Problem 5.9    [3 pts.]       2.0
+
+      Subtotal [50 max]      40.0
+             Your Total      37.0
+
+         Letter grade   A-minus
+
+=================
+SPECIFIC COMMENTS:
+
+Problem 1.1 ~ correct
+
+Problem 1.2 ~ correct
+
+Problem 2.4 ~ correct
+
+Problem 2.5 ~ correct
+
+Problem 4.2 ~ correct
+
+Problem 4.4 ~ Gantt chart doesn't have enough granularity of the dates to be
+   able to tell what the start and finish dates are and when holidays and
+   weekends fall in the schedule.  Nice looking chart, though...
+
+Problem 4.6 ~ correct
+
+Problem 4.8 ~ correct
+
+Problem 5.1 ~ correct
+
+Problem 5.3 ~ An audience-oriented classification is attempted, but several
+   items are miscategorized:
+   (e) “schedule at any time,” (f) “allow to run at any time,” (h) sequential
+      execution, and (i) waiting behavior are functional behaviors, not
+      nonfunctional qualities.
+   (a) “monitor while away from the office” is best labeled user + functional,
+      not purely business.
+   (g) “= 8 Mbps” is correctly nonfunctional (performance).
+
+Problem 5.9 ~ the Must item focuses on monetization rather than core
+   gameplay/UX improvements, and Won’t uses “could have,” which muddles the
+   category intent.
+
+
+nice work!

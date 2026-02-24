@@ -1,0 +1,107 @@
+
+Documentation Feedback ~ Deliverable #2
+Software Requirements Specification
+Initial Development Schedule
+CMSI 4072 Spring 2026
+=======================================
+
+COMPONENT BREAKDOWN:
+   Strengths:
+      Components are explicitly named (GUI, Move Validation, Self-Learning
+         NN, Database, File Handler), aiding traceability from structure to
+         requirements.
+   Suggestions:
+      Add short assumptions and constraints (e.g., single-user local
+         play only, no online matchmaking, RL training on-device vs. offline).
+      Include a context/sequence diagram (user -> GUI -> move validation ->
+         engine -> DB/file I/O) to reinforce “clear and agreed-upon.”
+      Provide a brief glossary (e.g., PGN, “standard matches”,
+         “reinforcement learning episode”) to remove ambiguity.
+
+FUNCTIONAL REQUIREMENTS:
+   Strengths:
+      Requirements are atomic, testable, and mapped to components, which
+         supports verification and traceability.
+   Suggestions:
+      Add error/edge-case flows: illegal drag attempts, corrupted or
+         malformed PGN, mid-game save failure, unsaved-changes prompts, and
+         recovery after app crash.
+      Clarify rules scope (castling rights, en passant, threefold
+         repetition, insufficient material). “FIDE rules” can be expanded into
+         explicit, testable clauses..pdf)
+      Specify user controls for engine difficulty or time controls
+         (fixed depth, time per move), and whether undo/redo is allowed.
+      Define data governance details: what “context for decision making”
+         means in the DB; retention of game histories; export/import formats
+         beyond PGN if any..pdf)
+      If learning occurs locally, add a toggle to run with or without
+         learning updates; define model reset and versioning behavior.
+
+PERFORMANCE REQUIREMENTS:
+   Strengths:
+      User-centred timings align with perceived responsiveness for turn-based
+         play and GUI interaction.
+   Suggestions:
+      Add range distributions for timings to ensure
+         consistency under load (e.g., large opening books, long game files).
+      Define resource ceilings tied to performance (max CPU usage %, max
+         RAM usage during analysis), and fallback policies (reduce search
+         depth when exceeding time budget).
+      Add startup time and model-load time targets; specify budget for
+         saving autosave snapshots..pdf)
+      Include stress scenarios: deep endgames, complicated positions, and
+         very large PGN files, with expected performance envelopes.
+
+ENVIRONMENT REQUIREMENTS:
+   Strengths:
+      Concrete OS, language, and library declarations improve repeatability.
+   Suggestions:
+      Add package version pins (TensorFlow minor/patch), and a
+         dependency management approach (pip/venv/Conda) plus a
+         reproducible build process.
+      Clarify GPU usage (CPU-only vs. optional CUDA), and required
+         drivers if GPU acceleration is supported..pdf)
+      Include data directories and permissions (where PGN and model
+         weights live), and backup/export expectations..pdf)
+      Note test frameworks and CI/CD (if any) for development
+         environment completeness.
+
+OVERALL ASSESSMENT:
+   Category                          Points
+   Component Breakdown               1.0/1
+   Functional Requirements           3.4/4
+   Performance Requirements          1.8/2
+   Environment Requirements          1.0/1
+                                     =====
+   Subtotal                          7.4/8
+   Preliminary Schedule              2.0/2   [Freebee]
+   ------------------------------------------------------
+   Total Percentage:   9.4/10 = 94% which is an A
+
+
+OVERALL ASSESSMENT:
+You've met most of the desired measurements for this deliverable.  Your SRS
+is very well done but could benefit from at least incorporating a few of
+the suggestions to make it even more complete, such as making rules and edge
+cases explicit, Complete environment detail, and Improve clarity and shared
+vocabulary.
+
+Nice work on this deliverable ~ keep up the good work!
+
+==================================
+evaluate the attached document as an SRS according to completeness based on the following categories:
+COMPONENT BREAKDOWN:
+FUNCTIONAL REQUIREMENTS:
+PERFORMANCE REQUIREMENTS:
+ENVIRONMENT REQUIREMENTS:
+
+base the evaluation on the descriptions on the web page at:
+https://bjohnson.lmu.build/cmsi4072web/requirem.html
+
+Provide suggestions and score to fit the following rubric:
+   Component Breakdown                 1 point
+   Functional Requirements             4 points
+   Performance Requirements            2 points
+   Environment Requirements            1 point
+
+
