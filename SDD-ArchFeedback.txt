@@ -1,0 +1,53 @@
+
+Documentation Feedback ~ Deliverable #3
+Software Design Document ~ Architecture
+CMSI 4072 Spring 2026 ~ self-learning chess
+=======================================
+
+6.1 INTRODUCTION SECTION:
+   System objectives section
+      Strengths:
+
+      Suggestions:
+
+   Hardware, software, and human interfaces section
+      Strengths:
+
+      Suggestions:
+
+
+6.2 ARCHITECTURAL DESIGN SECTION:
+   Major softwre components section
+      Strengths:
+
+      Suggestions:
+
+   Major software interactions section
+      Strengths:
+
+      Suggestions:
+
+   Architectural design diagrams section
+      Strengths:
+
+      Suggestions:
+
+
+OVERALL ASSESSMENT:
+   INTRODUCTION                        0.0
+   System objectives                   0.0
+   H/W, S/W, Human I/F                 0.0
+
+   ARCHITECTURAL DESIGN SECTION:
+   Major softwre components            0.0
+   Major software interactions         0.0
+   Architectural design diagrams       0.0
+                                     ======
+   Subtotal                            0.0
+   ------------------------------------------------------
+   Total Percentage:  0/10 = 100% which is an F on this deliverable.
+
+The document was not submitted by the due date, no other arrangements were
+made in advance.  Document was not located in repository by March 3 which
+is nearly a week past the due date.  Zero points for this deliverable.
+
