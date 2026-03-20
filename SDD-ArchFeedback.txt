@@ -7,47 +7,138 @@ CMSI 4072 Spring 2026 ~ self-learning chess
 6.1 INTRODUCTION SECTION:
    System objectives section
       Strengths:
-
+         Provides a clear description of the system’s goals and intended
+            user interactions.
+         Describes how reinforcement learning is integrated into gameplay.
+         The objectives mention how game states flow into the neural
+            network, which is useful for architectural context.
       Suggestions:
+         Consider distinguishing functional vs non-functional
+            objectives.
+         For example: accuracy of learning, reliability of saving data,
+            response time after a user move.
+         You may want to explicitly state measurable objectives
+            (e.g., move evaluation latency < X ms, database persistence must
+            not exceed Y seconds).
+         Identify any operational or deployment objectives (e.g.,
+            standalone desktop app, no internet dependency).
 
    Hardware, software, and human interfaces section
       Strengths:
-
+         Lists major hardware requirements in a clear, itemized format.
+         Includes processor, memory, storage, display, and input device
+            requirements.
+         Provides a solid list of external software dependencies and
+            libraries.
+         Notes the use of Python 3.12 and major libraries such as PyTorch,
+            Numpy, and Pygame.
+         Includes development environment tools such as VS Code and GitHub.
+         Describes the GUI layout clearly, including controls and board
+            representation.
+         Defines user interaction behavior (piece selection, buttons,
+            move history display).
       Suggestions:
+         It would help to explain why these hardware constraints matter
+            for specific subsystems (e.g., RL subsystem benefits from CPU).
+         Consider including guidance on minimum vs recommended levels
+            for performance-sensitive components.
+         Clarify whether the system expects GPU acceleration, since RL and
+            neural networks may benefit.
+         You may want to explicitly describe how each library interacts
+            with specific subsystems.  For example: PyTorch for RL training,
+            Pygame for UI rendering.
+         Consider describing version control structure (e.g., branching
+            strategy) if relevant to architecture.
+         Add explicit external system interfaces if any exist (e.g.,
+            file system, OS APIs).
+         Provide wireframes or UI diagrams in this section or in an
+            appendix.
+         Clarify accessibility considerations (contrast, color usage,
+            keyboard interaction).
+         Include navigation flow (start screen -> new game -> play -> save).
 
 
 6.2 ARCHITECTURAL DESIGN SECTION:
    Major softwre components section
       Strengths:
-
+         Clearly identifies four major subsystems: UI, Move Validation,
+            Reinforcement Learning, and Data Management.
+         Subsystems align well with functional requirements of a chess
+            engine with learning capability.
       Suggestions:
+         Provide more explicit interfaces (public functions, data formats,
+            API boundaries) for each subsystem.
+         Include component responsibilities and non-responsibilities to
+            prevent scope overlap.
+         Add internal decomposition if needed (e.g., RL subsystem broken
+            into policy network, reward handler, training loop).
+         Consider including component diagrams or module diagrams to show
+            boundaries and dependencies.
 
    Major software interactions section
       Strengths:
-
+         Provides a clear description of subsystem interaction flow.
+         Shows event order: UI -> Move Validation -> RL subsystem ->
+            Learning Database.
       Suggestions:
+         The interactions are currently described linearly; consider adding
+            error conditions or exceptional flows.
+         Describe data formats passed between components (e.g., board
+            encoded as 64-element array).
+         Add asynchronous vs synchronous call notes. RL evaluation might
+            require latency considerations.
+         Include sequence diagrams to show timing, order of calls, and
+            decision points.
 
    Architectural design diagrams section
       Strengths:
-
+         The section includes headings for component/data-flow diagrams,
+            use-case diagrams, and swimlane diagrams.
+         The inclusion of multiple diagram types indicates awareness of
+            architectural communication needs.
       Suggestions:
+         Data flow diagrams should show major data stores, inputs, outputs,
+            and transformation points.
 
 
 OVERALL ASSESSMENT:
-   INTRODUCTION                        0.0
-   System objectives                   0.0
-   H/W, S/W, Human I/F                 0.0
+   INTRODUCTION                        1.0
+   System objectives                   1.0
+   H/W, S/W, Human I/F                 1.0
 
    ARCHITECTURAL DESIGN SECTION:
-   Major softwre components            0.0
-   Major software interactions         0.0
-   Architectural design diagrams       0.0
+   Major softwre components            1.0
+   Major software interactions         1.0
+   Architectural design diagrams       5.0
                                      ======
-   Subtotal                            0.0
+   Subtotal                           10.0
    ------------------------------------------------------
-   Total Percentage:  0/10 = 100% which is an F on this deliverable.
+   Total Percentage:  10/10 = 100% which is an A-plus
+       1/2 off for lateness = 50% on this deliverable.
 
 The document was not submitted by the due date, no other arrangements were
 made in advance.  Document was not located in repository by March 3 which
 is nearly a week past the due date.  Zero points for this deliverable.
 
+============================================================================
+RE-EVALUATED 2026-03-09
+-----------------------
+I have filled in the feedback above based on your completed submission which
+was committed to your repository today.  You *did* have a prior submission,
+but it was not complete, and the core of the architecture document was all
+empty, which is why that was not evaluated and you recieved no points.  I
+checked the commit dates on your repository, per our conversation after
+class today, and that is what I found.
+
+Since you have now filled in the remaining sections, I have re-evaluated the
+submission.  However, because this is completed so late, the best that can
+be done is 1/2 credit for the deliverable.
+
+OVERALL EVALUATION:
+Your SDD presents a solid starting point for an architectural-level
+description.  The core subsystems are well chosen, and the document
+clearly conveys system purpose and major interactions. The main area for
+development is expanding the diagrams and interface descriptions so that
+the architecture is unambiguously defined for future implementation.
+
+Nice work overall.
