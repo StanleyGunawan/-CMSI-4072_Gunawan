@@ -1,0 +1,57 @@
+
+
+HW 3 - Stephens Book Chapters 7 and 8
+CMSI 4072 Spring 2026
+
+Category        Weight     Earned
+===========    ========    ======
+Problem 7.1    [5 pts.]      5.0
+Problem 7.2    [4 pts.]      4.0
+Problem 7.4    [5 pts.]      5.0
+Problem 7.5    [4 pts.]      4.0
+Problem 7.7    [5 pts.]      5.0
+Problem 8.1    [5 pts.]      4.0
+Problem 8.3    [5 pts.]      5.0
+Problem 8.5    [4 pts.]      4.0
+Problem 8.9    [4 pts.]      4.0
+Problem 8.11   [5 pts.]      3.0
+Problem 8.12   [4 pts.]      4.0
+
+       Subtotal [50 max]     50.0
+              Your Total     47.0
+         47.0 out of 50.0 =  94.0%
+
+         Letter grade   A
+
+=================
+SPECIFIC COMMENTS:
+Problem 7.1
+   Correct
+Problem 7.2
+   Correct
+Problem 7.4
+   Correct
+Problem 7.5
+   Correct
+Problem 7.7
+   Correct
+Problem 8.1
+   This will work, but won't test the edge cases of -1,000,000 and +1,000,000
+   since you are using random numbers.  You should expressly use those edge
+   cases as well as zero and zero pairs so that you are testing that your
+   software catches erroneous conditions as well as working properly.
+Problem 8.3
+   Correct
+Problem 8.5
+   Correct
+Problem 8.9
+   Correct
+Problem 8.11
+   You can't just use the highest number, you must average all the results
+   together to find the total number of bugs.  Further, part two of the
+   question asks you to find how many bugs are still not known, so if the
+   total is 14 and 10 are found there are still four at large.
+Problem 8.12
+   Correct
+
+nice work!
