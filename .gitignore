@@ -3,6 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Docx
+*.docx
+*.doc
+
 # C extensions
 *.so
 
