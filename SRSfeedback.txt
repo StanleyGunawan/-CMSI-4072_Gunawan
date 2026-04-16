@@ -88,20 +88,10 @@ vocabulary.
 
 Nice work on this deliverable ~ keep up the good work!
 
-==================================
-evaluate the attached document as an SRS according to completeness based on the following categories:
-COMPONENT BREAKDOWN:
-FUNCTIONAL REQUIREMENTS:
-PERFORMANCE REQUIREMENTS:
-ENVIRONMENT REQUIREMENTS:
-
-base the evaluation on the descriptions on the web page at:
-https://bjohnson.lmu.build/cmsi4072web/requirem.html
-
-Provide suggestions and score to fit the following rubric:
-   Component Breakdown                 1 point
-   Functional Requirements             4 points
-   Performance Requirements            2 points
-   Environment Requirements            1 point
 
 
+
+SRS SECOND PASS
+===============
+No evidence that any updates were made based on the suggestions and feedback
+provided.  No further points awarded.
